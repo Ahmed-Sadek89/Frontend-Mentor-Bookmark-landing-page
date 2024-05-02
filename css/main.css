@@ -1,0 +1,102 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+main .main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+main .main-info h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: hsl(229, 31%, 21%)
+}
+
+main .main-info p {
+    color: hsl(229, 8%, 60%);
+    line-height: 1.6;
+}
+
+main .main-info .main-info-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+main .main-info .main-info-btns button {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main .main-info .main-info-btns button:nth-child(1) {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+
+main .main-info .main-info-btns button:nth-child(2) {
+    background-color: #f7f8fa;
+    color: #6e6d76;
+}
+
+main .main-info .main-info-btns button:nth-child(1):hover {
+    background-color: transparent;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+}
+
+main .main-info .main-info-btns button:nth-child(2):hover {
+    background-color: transparent;
+    color: #333;
+    ;
+    border: 1px solid #333;
+}
+
+
+main .main-bg {
+    width: 50%;
+}
+
+
+@media(min-width: 0px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    main .main-info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    main .main-bg {
+        width: 100%;
+    }
+    main .main-bg img{
+        width: 100%;
+    }
+}
+
+@media(min-width: 900px) {
+    main {
+        flex-direction: row;
+    }
+    main .main-info {
+        width: 50%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    main .main-bg {
+        width: 50%;
+    }
+    main .main-bg img{
+        width: 100%;
+    }
+}
